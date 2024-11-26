@@ -1,0 +1,34 @@
+<!-- options.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Limiter Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
+    h1 { font-size: 18px; }
+    label { display: block; margin-top: 10px; }
+    input { width: 100%; padding: 5px; margin-top: 5px; }
+    button { margin-top: 15px; padding: 10px; width: 100%; }
+    #status { margin-top: 10px; color: green; }
+  </style>
+</head>
+<body>
+  <h1>Settings</h1>
+  <label>
+    Daily Limit (minutes):
+    <input type="number" id="dailyLimit" min="0">
+  </label>
+  <label>
+    Allowed Start Hour (0-23):
+    <input type="number" id="startHour" min="0" max="23">
+  </label>
+  <label>
+    Allowed End Hour (0-23):
+    <input type="number" id="endHour" min="0" max="23">
+  </label>
+  <button id="saveButton">Save Settings</button>
+  <p id="status"></p>
+</body>
+<script src="options.js"></script>
+</html>
