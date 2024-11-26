@@ -110,10 +110,16 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/_locales,
+				Resources/allowedHours.js,
 				Resources/background.js,
+				Resources/blocked.html,
+				Resources/blocked.js,
 				Resources/content.js,
+				Resources/contentScript.js,
 				Resources/images,
 				Resources/manifest.json,
+				Resources/options.html,
+				Resources/options.js,
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
@@ -125,10 +131,16 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/_locales,
+				Resources/allowedHours.js,
 				Resources/background.js,
+				Resources/blocked.html,
+				Resources/blocked.js,
 				Resources/content.js,
+				Resources/contentScript.js,
 				Resources/images,
 				Resources/manifest.json,
+				Resources/options.html,
+				Resources/options.js,
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,

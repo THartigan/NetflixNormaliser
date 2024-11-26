@@ -1,3 +1,11 @@
+//
+//  blocked.js
+//  NetflixNormaliser
+//
+//  Created by Thomas Hartigan on 26/11/2024.
+//
+
+
 // blocked.js
 
 console.log('Blocked page script loaded.');

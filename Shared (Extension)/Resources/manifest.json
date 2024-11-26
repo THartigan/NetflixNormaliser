@@ -1,10 +1,39 @@
 {
-    "manifest_version": 3,
-    "default_locale": "en",
+    "name": "Netflix Limiter",
+     "description": "Limits Netflix usage and removes addictive features.",
+     "version": "1.0",
+     "manifest_version": 2,
+     "permissions": [
+       "storage",
+       "tabs",
+       "*://*.netflix.com/*",
+       "webRequest",
+       "webRequestBlocking"
+     ],
+     "background": {
+       "scripts": ["background.js"]
+     },
+     "content_scripts": [
+       {
+         "matches": ["*://*.netflix.com/*"],
+         "js": ["contentScript.js"],
+         "run_at": "document_end",
+         "all_frames": false
+       }
+     ],
+     "browser_action": {
+       "default_title": "Netflix Limiter",
+       "default_popup": "popup.html"
+     },
+     "options_ui": {
+       "page": "options.html",
+       "open_in_tab": true
+     },
+     "web_accessible_resources": [
+       "blocked.html"
+     ],
+    
 
-    "name": "__MSG_extension_name__",
-    "description": "__MSG_extension_description__",
-    "version": "1.0",
 
     "icons": {
         "48": "images/icon-48.png",
@@ -12,22 +41,5 @@
         "128": "images/icon-128.png",
         "256": "images/icon-256.png",
         "512": "images/icon-512.png"
-    },
-
-    "background": {
-        "scripts": [ "background.js" ],
-        "type": "module"
-    },
-
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
-    }],
-
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": "images/toolbar-icon.svg"
-    },
-
-    "permissions": [ ]
+    }
 }

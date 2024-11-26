@@ -1,11 +1,21 @@
+<!-- popup.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
-    <script type="module" src="popup.js"></script>
+  <meta charset="UTF-8">
+  <title>Netflix Usage Stats</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 200px; }
+    h1 { font-size: 18px; margin-bottom: 10px; }
+    p { margin: 5px 0; }
+  </style>
 </head>
 <body>
-    <strong>Hello World!</strong>
+  <h1>Netflix Usage</h1>
+  <p>Daily Limit: <span id="dailyLimit">--</span> minutes</p>
+  <p>Time Used: <span id="timeUsed">--</span> minutes</p>
+  <p>Time Remaining: <span id="timeRemaining">--</span> minutes</p>
+  <p>Allowed Hours: <span id="allowedHours">--</span></p>
 </body>
+<script src="popup.js"></script>
 </html>
